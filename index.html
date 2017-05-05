@@ -8,10 +8,60 @@
 	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
 </head>
 <body>
+	<!--Jumbotron-->
 	<div class = 'jumbotron text-center'>
-		<h1>Welcome to the ThunderDome</h1>
+		<h1>Rock Paper Scissors</h1>
 	</div>
-
+	<!--Main-->
+	<div class = 'container container-fluid'>
+		<!--Enter Name Div-->
+		<div class = 'row'>
+			<div class =  'col-md-12 text-center'>
+				<form class="form-inline">
+  					<div class="form-group">
+    				<label for="name">Name:</label>
+    				<input type="text" class="form-control" id="playerName" placeholder="Player Name">
+  					</div>
+  				</form>
+  				<br>
+			</div>
+		</div>
+		<!--Player 1 Div-->
+		<div class = 'row'>
+			<div class = 'col-md-4'>
+				<div class = 'panel panel-success'>
+					<div class = 'panel-heading text-center'><h2 id = 'player1Name'>Player 1</h2></div>
+					<div class = 'panel-body text-center tealbg'>
+						<img src = 'assets/images/paper.jpg' alt = 'paper'>
+						<img src = 'assets/images/rock.jpg' alt = 'rock'>
+						<img src = 'assets/images/scissor.jpg' alt = 'scissors'>
+					</div>
+				</div>
+			</div>
+			<!--Results Div-->
+			<div class = 'col-md-4'>
+				<div class = 'panel panel-danger'>
+					<div class = 'panel-heading text-center'><h2>Results</h2></div>
+					<div class = 'panel-body'>
+						<h3>Player 1 chose:</h3>
+						<h3>Player 2 chose:</h3>
+						<h3>Results: </h3>
+					</div>
+				</div>
+			</div>
+			<!--Player 2 Div-->
+			<div class = 'col-md-4'>
+				<div class = 'panel panel-success'>
+					<div class = 'panel-heading text-center'><h2 id = 'player2Name'>Player 2</h2></div>
+					<div class = 'panel-body text-center tealbg'>
+						<img src = 'assets/images/paper.jpg' alt = 'paper'>
+						<img src = 'assets/images/rock.jpg' alt = 'rock'>
+						<img src = 'assets/images/scissor.jpg' alt = 'scissors'>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--JavaScript Files-->
 	<script src='https://www.gstatic.com/firebasejs/3.9.0/firebase.js'	></script>
 	<script src='assets/javascript/game.js'></script>
